@@ -66,8 +66,8 @@ with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_email_channel_body = AddEmailChannelBody(
-        user_id="user_id_example",
         email="email_example",
+        user_id="user_id_example",
     ) # AddEmailChannelBody | 
 
     try:

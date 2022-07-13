@@ -37,8 +37,8 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_email_channel_body = AddEmailChannelBody(
-        user_id="user_id_example",
         email="email_example",
+        user_id="user_id_example",
     ) # AddEmailChannelBody | 
 
     # example passing only required values which don't have defaults set
@@ -106,8 +106,8 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_telegram_channel_body = AddTelegramChannelBody(
-        telegram_username="telegram_username_example",
         user_id="user_id_example",
+        telegram_username="telegram_username_example",
     ) # AddTelegramChannelBody | 
 
     # example passing only required values which don't have defaults set
@@ -175,8 +175,8 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     send_notification_body = SendNotificationBody(
-        user_id="user_id_example",
         subject="subject_example",
+        user_id="user_id_example",
         message="message_example",
     ) # SendNotificationBody | 
 
