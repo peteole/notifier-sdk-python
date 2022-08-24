@@ -3,6 +3,7 @@
 .travis.yml
 README.md
 docs/AddChannelBody.md
+docs/ChannelResponse.md
 docs/ChannelsResponse.md
 docs/CrateApi.md
 docs/GetTelegramChatIdBody.md
@@ -18,6 +19,7 @@ openapi_client/configuration.py
 openapi_client/exceptions.py
 openapi_client/model/__init__.py
 openapi_client/model/add_channel_body.py
+openapi_client/model/channel_response.py
 openapi_client/model/channels_response.py
 openapi_client/model/get_telegram_chat_id_body.py
 openapi_client/model/notify_body.py
@@ -30,4 +32,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_channel_response.py
 tox.ini

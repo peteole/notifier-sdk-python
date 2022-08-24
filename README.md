@@ -69,8 +69,8 @@ with openapi_client.ApiClient(configuration) as api_client:
     api_instance = crate_api.CrateApi(api_client)
     add_channel_body = AddChannelBody(
         user_id="user_id_example",
-        service_id="service_id_example",
         service_username="service_username_example",
+        service_id="service_id_example",
     ) # AddChannelBody | 
 
     try:
@@ -96,6 +96,7 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [AddChannelBody](docs/AddChannelBody.md)
+ - [ChannelResponse](docs/ChannelResponse.md)
  - [ChannelsResponse](docs/ChannelsResponse.md)
  - [GetTelegramChatIdBody](docs/GetTelegramChatIdBody.md)
  - [NotifyBody](docs/NotifyBody.md)

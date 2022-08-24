@@ -40,8 +40,8 @@ with openapi_client.ApiClient() as api_client:
     api_instance = crate_api.CrateApi(api_client)
     add_channel_body = AddChannelBody(
         user_id="user_id_example",
-        service_id="service_id_example",
         service_username="service_username_example",
+        service_id="service_id_example",
     ) # AddChannelBody | 
 
     # example passing only required values which don't have defaults set
@@ -244,9 +244,9 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     notify_body = NotifyBody(
-        message="message_example",
         user_id="user_id_example",
         subject="subject_example",
+        message="message_example",
     ) # NotifyBody | 
 
     # example passing only required values which don't have defaults set

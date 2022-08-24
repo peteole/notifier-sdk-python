@@ -83,8 +83,8 @@ class AddChannelBody(ModelNormal):
         """
         return {
             'user_id': (str,),  # noqa: E501
-            'service_id': (str,),  # noqa: E501
             'service_username': (str,),  # noqa: E501
+            'service_id': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -94,8 +94,8 @@ class AddChannelBody(ModelNormal):
 
     attribute_map = {
         'user_id': 'user_id',  # noqa: E501
-        'service_id': 'service_id',  # noqa: E501
         'service_username': 'service_username',  # noqa: E501
+        'service_id': 'service_id',  # noqa: E501
     }
 
     read_only_vars = {
@@ -105,13 +105,13 @@ class AddChannelBody(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, user_id, service_id, service_username, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, user_id, service_username, service_id, *args, **kwargs):  # noqa: E501
         """AddChannelBody - a model defined in OpenAPI
 
         Args:
             user_id (str):
-            service_id (str):
             service_username (str):
+            service_id (str):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -176,8 +176,8 @@ class AddChannelBody(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.user_id = user_id
-        self.service_id = service_id
         self.service_username = service_username
+        self.service_id = service_id
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
@@ -198,13 +198,13 @@ class AddChannelBody(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, user_id, service_id, service_username, *args, **kwargs):  # noqa: E501
+    def __init__(self, user_id, service_username, service_id, *args, **kwargs):  # noqa: E501
         """AddChannelBody - a model defined in OpenAPI
 
         Args:
             user_id (str):
-            service_id (str):
             service_username (str):
+            service_id (str):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -267,8 +267,8 @@ class AddChannelBody(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.user_id = user_id
-        self.service_id = service_id
         self.service_username = service_username
+        self.service_id = service_id
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
