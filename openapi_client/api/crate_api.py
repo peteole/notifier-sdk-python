@@ -92,7 +92,7 @@ class CrateApi(object):
             settings={
                 'response_type': (ChannelsResponse,),
                 'auth': [],
-                'endpoint_path': '/notify/get_channels/{user_id}',
+                'endpoint_path': '/get_channels/{user_id}',
                 'operation_id': 'handle_get_channels',
                 'http_method': 'GET',
                 'servers': None,

@@ -68,9 +68,9 @@ with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_channel_body = AddChannelBody(
+        user_id="user_id_example",
         service_id="service_id_example",
         service_username="service_username_example",
-        user_id="user_id_example",
     ) # AddChannelBody | 
 
     try:
@@ -87,7 +87,7 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CrateApi* | [**handle_add_channel**](docs/CrateApi.md#handle_add_channel) | **POST** /add_channel | Add channel
-*CrateApi* | [**handle_get_channels**](docs/CrateApi.md#handle_get_channels) | **GET** /notify/get_channels/{user_id} | Get notification channels for user
+*CrateApi* | [**handle_get_channels**](docs/CrateApi.md#handle_get_channels) | **GET** /get_channels/{user_id} | Get notification channels for user
 *CrateApi* | [**handle_get_telegram_chat_id**](docs/CrateApi.md#handle_get_telegram_chat_id) | **POST** /get_telegram_chat_id | Get the chat ID of a telegram username
 *CrateApi* | [**handle_notify**](docs/CrateApi.md#handle_notify) | **POST** /notify | Send notification
 *CrateApi* | [**handle_remove_channel**](docs/CrateApi.md#handle_remove_channel) | **POST** /remove_channel | Remove channel

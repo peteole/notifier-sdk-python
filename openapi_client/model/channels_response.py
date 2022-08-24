@@ -88,8 +88,8 @@ class ChannelsResponse(ModelNormal):
         """
         lazy_import()
         return {
-            'channels': ([ChannelResponse],),  # noqa: E501
             'user_id': (str,),  # noqa: E501
+            'channels': ([ChannelResponse],),  # noqa: E501
         }
 
     @cached_property
@@ -98,8 +98,8 @@ class ChannelsResponse(ModelNormal):
 
 
     attribute_map = {
-        'channels': 'channels',  # noqa: E501
         'user_id': 'user_id',  # noqa: E501
+        'channels': 'channels',  # noqa: E501
     }
 
     read_only_vars = {
@@ -109,12 +109,12 @@ class ChannelsResponse(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, channels, user_id, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, user_id, channels, *args, **kwargs):  # noqa: E501
         """ChannelsResponse - a model defined in OpenAPI
 
         Args:
-            channels ([ChannelResponse]):
             user_id (str):
+            channels ([ChannelResponse]):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -178,8 +178,8 @@ class ChannelsResponse(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
-        self.channels = channels
         self.user_id = user_id
+        self.channels = channels
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
@@ -200,12 +200,12 @@ class ChannelsResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, channels, user_id, *args, **kwargs):  # noqa: E501
+    def __init__(self, user_id, channels, *args, **kwargs):  # noqa: E501
         """ChannelsResponse - a model defined in OpenAPI
 
         Args:
-            channels ([ChannelResponse]):
             user_id (str):
+            channels ([ChannelResponse]):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -267,8 +267,8 @@ class ChannelsResponse(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
-        self.channels = channels
         self.user_id = user_id
+        self.channels = channels
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**handle_add_channel**](CrateApi.md#handle_add_channel) | **POST** /add_channel | Add channel
-[**handle_get_channels**](CrateApi.md#handle_get_channels) | **GET** /notify/get_channels/{user_id} | Get notification channels for user
+[**handle_get_channels**](CrateApi.md#handle_get_channels) | **GET** /get_channels/{user_id} | Get notification channels for user
 [**handle_get_telegram_chat_id**](CrateApi.md#handle_get_telegram_chat_id) | **POST** /get_telegram_chat_id | Get the chat ID of a telegram username
 [**handle_notify**](CrateApi.md#handle_notify) | **POST** /notify | Send notification
 [**handle_remove_channel**](CrateApi.md#handle_remove_channel) | **POST** /remove_channel | Remove channel
@@ -39,9 +39,9 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_channel_body = AddChannelBody(
+        user_id="user_id_example",
         service_id="service_id_example",
         service_username="service_username_example",
-        user_id="user_id_example",
     ) # AddChannelBody | 
 
     # example passing only required values which don't have defaults set
@@ -244,9 +244,9 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     notify_body = NotifyBody(
+        message="message_example",
         user_id="user_id_example",
         subject="subject_example",
-        message="message_example",
     ) # NotifyBody | 
 
     # example passing only required values which don't have defaults set
@@ -314,8 +314,8 @@ with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     remove_channel_body = RemoveChannelBody(
-        service_id="service_id_example",
         user_id="user_id_example",
+        service_id="service_id_example",
     ) # RemoveChannelBody | 
 
     # example passing only required values which don't have defaults set
