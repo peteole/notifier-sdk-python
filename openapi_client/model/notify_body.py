@@ -83,8 +83,8 @@ class NotifyBody(ModelNormal):
         """
         return {
             'user_id': (str,),  # noqa: E501
-            'message': (str,),  # noqa: E501
             'subject': (str,),  # noqa: E501
+            'message': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -94,8 +94,8 @@ class NotifyBody(ModelNormal):
 
     attribute_map = {
         'user_id': 'user_id',  # noqa: E501
-        'message': 'message',  # noqa: E501
         'subject': 'subject',  # noqa: E501
+        'message': 'message',  # noqa: E501
     }
 
     read_only_vars = {
@@ -105,13 +105,13 @@ class NotifyBody(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, user_id, message, subject, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, user_id, subject, message, *args, **kwargs):  # noqa: E501
         """NotifyBody - a model defined in OpenAPI
 
         Args:
             user_id (str):
-            message (str):
             subject (str):
+            message (str):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -176,8 +176,8 @@ class NotifyBody(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.user_id = user_id
-        self.message = message
         self.subject = subject
+        self.message = message
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
@@ -198,13 +198,13 @@ class NotifyBody(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, user_id, message, subject, *args, **kwargs):  # noqa: E501
+    def __init__(self, user_id, subject, message, *args, **kwargs):  # noqa: E501
         """NotifyBody - a model defined in OpenAPI
 
         Args:
             user_id (str):
-            message (str):
             subject (str):
+            message (str):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -267,8 +267,8 @@ class NotifyBody(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.user_id = user_id
-        self.message = message
         self.subject = subject
+        self.message = message
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

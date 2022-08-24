@@ -51,6 +51,7 @@ import openapi_client
 from pprint import pprint
 from openapi_client.api import crate_api
 from openapi_client.model.add_channel_body import AddChannelBody
+from openapi_client.model.channels_response import ChannelsResponse
 from openapi_client.model.get_telegram_chat_id_body import GetTelegramChatIdBody
 from openapi_client.model.notify_body import NotifyBody
 from openapi_client.model.remove_channel_body import RemoveChannelBody
@@ -86,6 +87,7 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CrateApi* | [**handle_add_channel**](docs/CrateApi.md#handle_add_channel) | **POST** /add_channel | Add channel
+*CrateApi* | [**handle_get_channels**](docs/CrateApi.md#handle_get_channels) | **GET** /notify/get_channels/{user_id} | Get notification channels for user
 *CrateApi* | [**handle_get_telegram_chat_id**](docs/CrateApi.md#handle_get_telegram_chat_id) | **POST** /get_telegram_chat_id | Get the chat ID of a telegram username
 *CrateApi* | [**handle_notify**](docs/CrateApi.md#handle_notify) | **POST** /notify | Send notification
 *CrateApi* | [**handle_remove_channel**](docs/CrateApi.md#handle_remove_channel) | **POST** /remove_channel | Remove channel
