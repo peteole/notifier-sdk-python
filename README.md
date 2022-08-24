@@ -67,9 +67,9 @@ with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = crate_api.CrateApi(api_client)
     add_channel_body = AddChannelBody(
-        user_id="user_id_example",
         service_id="service_id_example",
         service_username="service_username_example",
+        user_id="user_id_example",
     ) # AddChannelBody | 
 
     try:
